@@ -19,6 +19,7 @@ public class TotalLogic {
 
 	}
 
+
 	public void execute02(OrderBeans order) {
 		salesDAO dao = new salesDAO();
 		dao.create(order);

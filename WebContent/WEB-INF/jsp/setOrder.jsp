@@ -5,28 +5,44 @@
 <head>
 <meta charset="UTF-8">
 <style>
+
+body {
+  font-family: "Avenir Next";
+}
+
 h1{
 font-size 14pt;
-font-family: メイリオ;
 color: green;
 text-align: center;
 
 }
 
 #button{
-font-size 30pt;
-font-family: メイリオ;
-color:black;
-margin-right: 10px;
 text-align: center;
-font-weight:bold;
+}
+
+
+.btn{
+	font-size: 20px;
+	color: black;
+	min-width: 150px;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	display:inline-block;
+	margin-bottom:20px;
+}
+
+.btn:hover {
+	background-color: yellow;
+}
 }
 </style>
 <title>注文確定</title>
 </head>
 <body>
 <h1>ご注文を受け付けました</h1>
-<div id="button"><a href = "/Order/OrderServlet">注文画面へ</a>
+<div id="button"><a href = "/Order/OrderServlet" class = "btn">注文画面へ</a>
 </div>
+
 </body>
 </html>

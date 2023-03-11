@@ -1,0 +1,137 @@
+.header-logo {
+    font-size: 40pt;
+
+}
+
+.list li {
+    float: left;
+    list-style-type: none;
+}
+
+h1 {
+    font-size 35pt;
+    font-family: メイリオ;
+    color: green;
+    text-align: center;
+
+}
+
+.menu {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+.pic {
+    mini-width: 50%;
+    mini-height: 300px;
+    border-radius: 5px;
+
+
+}
+
+#content1 {
+    font-size 30pt;
+    font-family: メイリオ;
+    color: black;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content2 {
+    font-size 30pt;
+    font-family: メイリオ;
+    color: black;
+    margin-right: 15px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#button {
+    font-size 10pt;
+    font-family: メイリオ;
+    color: black;
+    margin-top: 15px;
+    text-align: center;
+
+
+}
+
+
+#button:hover {
+    color: white;
+}
+
+.button-select {
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    min-width: 300px;
+}
+
+.order-button {
+    margin-top: 15px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.pay-button {
+    margin-top: 7px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.sale-button {
+    margin-top: 15px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+.contact-h {
+    font-size 35pt;
+    font-family: メイリオ;
+    color: green;
+    text-align: center;
+}
+
+.query-section {
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+.contact {
+    text-align: center;
+}
+
+.form-table {
+    margin: 0 auto;
+}
+
+.form-table th {
+    padding: 10px;
+    text-align: left;
+}
+
+.form-table td {
+    padding: 10px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.query-button {
+    margin-top: 7px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+
+#map {
+    margin-top: 7px;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
