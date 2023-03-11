@@ -14,4 +14,14 @@ public class setParameter {
 		return OB;
 	}
 
+	public QueryBeans execute02 (HttpServletRequest request) {
+		String option = request.getParameter("option");
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String detail = request.getParameter("detail");
+		QueryBeans QB = new QueryBeans(option, name, email, detail);
+		return QB;
+
+	}
+
 }

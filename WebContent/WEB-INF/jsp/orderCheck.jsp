@@ -6,75 +6,95 @@
 <head>
 <meta charset="UTF-8">
 <style>
+
+body {
+  font-family: "Avenir Next";
+}
+
 h1{
 font-size 14pt;
-font-family: メイリオ;
 color: green;
 text-align: center;
 
 }
 
 #content1{
-font-size 30pt;
-font-family: メイリオ;
-color:black;
-margin-right: 10px;
 text-align: center;
-}
+font-size: 30px;
+font-weight:bold;
 
-#content2{
-font-size 30pt;
-font-family: メイリオ;
-color:black;
-margin-right: 15px;
-text-align: center;
 }
-
 #button{
-font-size 30pt;
-font-family: メイリオ;
-color:black;
-margin-top:15px;
 text-align: center;
 }
+
+
+.btn-done{
+	font-size: 20px;
+	color: black;
+	min-width: 150px;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	display:inline-block;
+	margin-bottom:20px;
+}
+
+.btn-done:hover {
+	background-color: yellow;
+}
+
+
+.btn-back{
+	font-size: 20px;
+	color: black;
+	min-width: 150px;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	display:inline-block;
+	margin-bottom:20px;
+}
+
+.btn-back:hover {
+	background-color: yellow;
+}
+
 
 </style>
 <title>注文確認</title>
 </head>
 <body>
+
 <h1>注文確認画面</h1>
 <div id="content1">
 <c:if test="${OB.karubinum > 0}">
-	<strong>カルビ：${OB. karubinum}</strong><br>
+	<p>カルビ：${OB. karubinum}</p>
 </c:if>
 
 <c:if test="${OB.rosnum > 0}">
-	<strong>ロース：${OB.rosnum}</strong><br>
+	<p>ロース：${OB.rosnum}</p>
 </c:if>
 
 <c:if test="${OB.haraminum > 0}">
-	<strong>ハラミ：${OB.haraminum}</strong><br>
+	<p>ハラミ：${OB.haraminum}</p>
 </c:if>
-</div>
 
-<div id="content2">
 <c:if test="${OB.tannum > 0}">
-	<strong>タン  :${OB.tannum}</strong><br>
+	<p>タン  :${OB.tannum}</p>
 </c:if>
 
 <c:if test="${OB.ricenum > 0}">
-	<strong>ごはん:${OB.ricenum}</strong>
+	<p>ごはん:${OB.ricenum}</p>
 </c:if>
-<br>
 
 <c:if test="${OB.vegnum > 0}">
-	<strong>野菜の盛り合わせ:${OB.vegnum}</strong>
+	<p>野菜の盛り合わせ:${OB.vegnum}</p>
 </c:if>
 </div>
 <br>
 <div id="button">
-<a href = "/Order/OrderServlet"><strong>戻る</strong></a>
-<a href = "/Order/OrderServlet?action=done"><strong>確定</strong></a>
+<a href = "/Order/OrderServlet?action=done"class="btn-done">確定</a>
+<a href = "/Order/OrderServlet" class="btn-back">戻る</a>
 </div>
+
 </body>
 </html>
