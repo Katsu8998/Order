@@ -230,14 +230,15 @@ background-color:red;
 </style>
 
 <title>ご注文画面</title>
+	
 <script
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbRJ14xTzV5cE76lwjz0K_h6whHz1lVtk&callback=initMap&v=weekly"
+	src=""
 	defer>  </script>
 <script>
  let map;
  function initMap() {
-     map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
-    	 mapId: "e83f55c1e8cc32d9 ",
+     map = new google.maps.Map(document.getElementById('map'), { // #地図を埋め込む
+    	 mapId: "",
     	   center: {  lat: 35.68953, // 緯度
                lng: 139.70130 },
     	   zoom: 12,
