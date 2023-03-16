@@ -17,6 +17,8 @@ import model.setParameter;
 /**
  * Servlet implementation class Question
  */
+
+//お問い合わせ処理コントローラー
 @WebServlet("/Question")
 public class Question extends HttpServlet {
 	private static final long serialVersionUID = 1L;
