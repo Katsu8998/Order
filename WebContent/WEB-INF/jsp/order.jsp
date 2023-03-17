@@ -336,11 +336,15 @@ margin: 0 auto;
 </style>
 
 <title>ご注文画面</title>
+
 <script src="" defer>  </script>
+
 <script>
  let map;
  function initMap() {
-     map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
+
+     map = new google.maps.Map(document.getElementById('map'), { // #地図を埋め込む
+
     	 mapId: "",
     	   center: {  lat: 35.68953, // 緯度
                lng: 139.70130 },
