@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,238 +12,326 @@
 <link rel="stylesheet" type="text/css" href="./style.css" />
 <style>
 body {
-	font-family: "Avenir Next";
-	width:100%;
+font-family: "Avenir Next";
+width:100%;
 }
 
-header {
-	background-color: black;
-	color: #fff;
-	height: 120px;
+* {
+box-sizing: border-box;
+}
+
+header{
+background-color: black;
+color: #fff;
+height: 120px;
+width:100%;
 }
 
 .header-logo {
-	font-size: 30px;
-	padding: 3px 40px;
+font-size: 30px;
+padding: 3px 40px;
+
 }
 
 .list li {
-	font-size: 20px;
-	float: left;
-	list-style-type: none;
-	padding: 3px 20px;
+font-size: 20px;
+float: left;
+list-style-type: none;
+padding: 3px 20px;
+}
+span{
+color:red;
 }
 
-span {
-	color: red;
+footer{
+color: #fff;
+height: 150px;
+padding: 40px;
+background-color:black;
+
 }
 
-footer {
-	color: #fff;
-	height: 120px;
-	padding: 40px;
-	background-color: black;
-}
+.footer-logo{
+font-size: 25pt;
+float:left;
 
-.footer-logo {
-	font-size: 25pt;
-	float: left;
 }
 
 .footer-list {
-	float: right;
+float: right;
+
 }
 
-.footer-list li {
-	font-size: 20px;
-	list-style-type: none;
-	padding-bottom: 3px;
+.footer-list li{
+font-size: 20px;
+list-style-type: none;
+padding-bottom:3px;
+
 }
 
-.main {
-	padding: 100px 80px;
+.main{
+padding: 100px 80px;
 }
 
 h1 {font-size 35pt;
-	color: black;
-	text-align: center;
+color: black;
+text-align: center;
+
 }
 
-.content-h2 {
-	text-align: center;
-	border-bottom: 2px solid #dee7ec;
+.content-h2{
+text-align:center;
+border-bottom:2px solid #dee7ec;
 }
 
-.menu {
-	padding: 7px;
-	border-radius: 10px;
-	border: 1px solid #CCC;
+
+
+.contents{
+height: 300px;
+margin-top: 100px;
+ border-bottom: 1px solid #CCC;
 }
 
-.contents {
-	height: 400px;
-	margin-top: 100px;
-	border-bottom: 1px solid #CCC;
-}
 
 @media screen and ( max-width :1000px) {
-	.contents {
-		width: 50%;
-		height: 200px;
-		border-radius: 5px;
-		margin-left: 100px;
-		float: left;
-	}
-}
 
-@media screen and ( max-width :640px) {
-	.contents {
-		width: 20%;
-		height: 20%;
-		border-radius: 5px;
-		margin-left: 100px;
-		float: left;
+.contents{
+height: 200px;
+margin-top: 100px;
+width:100%;
 
-	}
+
 }
 
 .pic {
-		width: 300px;
-		height: 250px;
-		border-radius: 5px;
-		margin-left: 100px;
-		float: left;
+width:25%;
+margin-bottom:50px;
+position: relative;
+
+}
+.contents-order{
+
+margin-top:130px;
+    text-align:center;
+}
+footer{
+width:100%;
+text-align:center;
+height: 150px;
+}
+
+}
+
+@media screen and ( max-width :670px) {
+.header{
+background-color: black;
+color: #fff;
+height: 120px;
+width:100%;
+}
+.pic {
+width:100%;
+margin-bottom:50px;
+position: relative;
+margin-left:100px;
+
+}
+
+.contact-h{
+display: inline-block;
+
+}
+
+.contents-order{
+width:100%;
+margin-top:10px;
+   text-align:center;
+
+}
+
+
+footer{
+text-align: center;
+width:100%;
+height: 150px;
+}
+
+#content1 {font-size 30pt;
+color: black;
+margin-right: 10px;
+text-align: left;
+font-weight: bold;
+}
+
+#content2 {font-size 30pt;
+color: black;
+margin-right: 15px;
+text-align: left;
+font-weight: bold;
+
+
+}
+}
+
+.pic {
+width:25%;
+height: 200px;
+border-radius: 5px;
+margin-left:0 auto;
+float: left;
+
 }
 
 #popup-wrapper {
-  background-color: rgba(0, 0, 0, .5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
+background-color: rgba(0, 0, 0, .5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: none;
 }
 
 #popup-inside {
-  text-align: center;
-  width: 100%;
-  max-width: 1000px;
-  height:100%;
-  background: white;
-  margin: 10% auto;
-  padding: 20px;
-  position: relative;
+text-align: center;
+width: 100%;
+max-width: 1000px;
+height:100%;
+background: white;
+margin: 10% auto;
+padding: 20px;
+position: relative;
 }
 #close {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  cursor: pointer;
+position: absolute;
+top: 0;
+right: 5px;
+cursor: pointer;
 }
 
 .pic1{
-		width: 300px;
-		height: 200px;
+width: 100px;
+height: 50px;
 }
 
-a {
-		color: white;
-	}
+a{
+color:white;
+}
 
 #content1 {font-size 30pt;
-		color: black;
-		margin-right: 10px;
-		text-align: center;
-		font-weight: bold;
-	}
+color: black;
+margin-right: 10px;
+text-align: center;
+font-weight: bold;
+}
 
 #content2 {font-size 30pt;
-		color: black;
-		margin-right: 15px;
-		text-align: center;
-		font-weight: bold;
-	}
-	#button {font-size 10pt;
-		color: black;
-		margin-top: 15px;
-		text-align: center;
-	}
-	#button:hover {
-		color: white;
-	}
-	.button-select {
-		margin-top: 30px;
-		padding: 5px;
-		border-radius: 10px;
-		border: 1px solid #CCC;
-		min-width: 300px;
-	}
-	.order-button {
-		margin-top: 15px;
-		min-width: 150px;
-		border-radius: 10px;
-	}
-	.order-button:hover {
-		background-color: red;
-	}
-	.pay-button {
-		margin-top: 7px;
-		min-width: 150px;
-		border-radius: 10px;
-	}
-	.pay-button:hover {
-		background-color: red;
-	}
-	.sale-button {
-		margin-top: 15px;
-		min-width: 150px;
-		border-radius: 10px;
-	}
-	.sale-button:hover {
-		background-color: red;
-	}
-	.contact-h {font-size 35pt;
-		color: black;
-		text-align: center;
-	}
-	.query-section {
-		border-radius: 10px;
-		border: 1px solid #CCC;
-	}
-	.contact {
-		text-align: center;
-	}
-	.input, textarea {
-		border: 1px solid #dee7ec;
-	}
-	.form-table {
-		margin: 0 auto;
-	}
-	.form-table th {
-		padding: 10px;
-		text-align: left;
-	}
-	.form-table td {
-		padding: 10px;
-	}
-	.form-button {
-		text-align: center;
-	}
-	.query-button {
-		margin-top: 7px;
-		min-width: 150px;
-		border-radius: 10px;
-	}
-	.query-button:hover {
-		background-color: red;
-	}
-	#map {
-		margin-top: 7px;
-		width: 700px;
-		height: 400px;
-		margin: 0 auto;
-	}
+color: black;
+margin-right: 15px;
+text-align: center;
+font-weight: bold;
+
+}
+#button {font-size 10pt;
+color: black;
+margin-top: 15px;
+text-align: center;
+
+}
+
+#button:hover {
+color: white;
+}
+
+.button-select {
+margin-top: 30px;
+padding: 5px;
+border-radius: 10px;
+border: 1px solid #CCC;
+min-width: 300px;
+}
+
+.order-button {
+margin-top: 15px;
+min-width: 150px;
+border-radius: 10px;
+}
+
+.order-button:hover{
+background-color:red;
+}
+
+.pay-button {
+margin-top: 7px;
+min-width: 150px;
+border-radius: 10px;
+}
+
+.pay-button:hover{
+background-color:red;
+}
+
+.sale-button {
+margin-top: 15px;
+min-width: 150px;
+border-radius: 10px;
+}
+
+.sale-button:hover{
+background-color:red;
+}
+.contact-h {font-size 35pt;
+color: black;
+text-align: center;
+width:100%;
+}
+
+.query-section {
+border-radius: 10px;
+border: 1px solid #CCC;
+}
+
+.contact {
+text-align: center;
+}
+
+.input,textarea{
+border:1px solid #dee7ec;
+}
+
+.form-table {
+margin: 0 auto;
+}
+
+.form-table th {
+padding: 10px;
+text-align: left;
+}
+
+.form-table td {
+padding: 10px;
+}
+
+.form-button {
+text-align: center;
+}
+
+.query-button {
+margin-top: 7px;
+min-width: 150px;
+border-radius: 10px;
+}
+.query-button:hover{
+background-color:red;
+}
+
+#map {
+margin-top: 7px;
+width: 700px;
+height: 400px;
+margin: 0 auto;
+}
+
 }
 </style>
 
@@ -253,7 +341,7 @@ a {
  let map;
  function initMap() {
      map = new google.maps.Map(document.getElementById('map'), { // #sampleに地図を埋め込む
-    	 mapId: "e83f55c1e8cc32d9 ",
+    	 mapId: "",
     	   center: {  lat: 35.68953, // 緯度
                lng: 139.70130 },
     	   zoom: 12,
@@ -306,28 +394,27 @@ a {
 				src="/Order/img/お肉4.jpg" class="pic" onclick="mClick(this)" >
 
 		</div>
-
-		<h2 class="contact-h" id="order">ご注文数を入力してください。</h2>
+<div class= "contents-order">
+		<h2 class="contact-h" id="order">注文数を入力ください。</h2>
 
 		<form name="form1" action="/Order/OrderServlet" method="post"
 			onsubmit="return funcConfirm()">
-			<section class="menu">
 				<div id="content1">
-					カルビ 350円: <input type="number" name="karubi" min="0" max="20">
-					ロース 400円: <input type="number" name="ros" min="0" max="20">
-					ハラミ 400円: <input type="number" name="harami" min="0" max="20">
+					カルビ 350円: <input type="number" name="karubi" min="0" max="20"><br>
+					ロース 400円: <input type="number" name="ros" min="0" max="20"><br>
+					ハラミ 400円: <input type="number" name="harami" min="0" max="20"><br>
 				</div>
 				<br>
 				<div id="content2">
-					タン 600円: <input type="number" name="tan" min="0" max="20">
-					ごはん 200円: <input type="number" name="rice" min="0" max="20">
-					野菜盛り合わせ 800円: <input type="number" name="veg" min="0" max="20">
+					タン 600円: <input type="number" name="tan" min="0" max="20"><br>
+					ごはん 200円: <input type="number" name="rice" min="0" max="20"><br>
+					野菜盛り合わせ 800円: <input type="number" name="veg" min="0" max="20"><br>
 				</div>
 				<div id="button">
 					<input type="submit" value="注文" name="order" class="order-button">
 				</div>
 		</form>
-
+</div>
 		<form action="/Order/OrderServlet" method="post">
 			<div id="button">
 				<input type="submit" value="お会計" name="order" class="pay-button"><br>
@@ -342,7 +429,7 @@ a {
 			<form action="/Order/Question" method="post" name = "form2" onsubmit="return funcConfirm2()">
 				<table class="form-table">
 					<tr>
-						<th>問い合わせ内容</th>
+						<th>内容</th>
 						<td><select class="contact-select" name="option">
 								<option value="Q1">プランについて</option>
 								<option value="Q2">注文方法について</option>
@@ -350,7 +437,7 @@ a {
 						</select></td>
 					</tr>
 					<tr>
-						<th>お名前</th>
+						<th>氏名</th>
 						<td><input type="text" name="name"></td>
 					</tr>
 
